@@ -1,12 +1,26 @@
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        res = []
+        # res = []
+
+        # for i in range(len(nums)):
+        #     for j in range(i + 1, len(nums)):
+        #         if nums[i] + nums[j] == target:
+        #             res.append(i)
+        #             res.append(j)
+        # return res
+
+        #OPTIMAL CODE
+
+        map = {}
 
         for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    res.append(i)
-                    res.append(j)
-        return res
+            rem = target - nums[i]
+            
+            if rem in map:
+                return [map[rem], i]
+
+            map[nums[i]] = i    
+
+
 
         
