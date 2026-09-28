@@ -10,6 +10,9 @@ class Solution:
         #     str2 += ch
 
         # return str1 == str2
+
+
+        #SHORT APPROACH USING JOIN
         
         # return "".join(word1) == "".join(word2)
 
