@@ -1,18 +1,34 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
 
-        if len(sentence) < 26:
-            return False
+        # if len(sentence) < 26:
+        #     return False
 
-        freq = {}
+        # freq = {}
+
+        # for ch in sentence:
+        #     if ch not in freq:
+        #         freq[ch] = 1
+
+        #     if len(freq) == 26:
+        #         return True
+
+        # return count == 26
+        
+        char = [False] * 26
+        count = 0
 
         for ch in sentence:
-            if ch not in freq:
-                freq[ch] = 1
+            idx = ord(ch) - ord('a')
 
-            if len(freq) == 26:
-                return True
+            if not char[idx]:
+                char[idx] = True
+                count += 1
 
+                if count == 26:
+                    return True
+        
         return count == 26
+
 
         
