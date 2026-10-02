@@ -1,5 +1,7 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
+
+        #Optimal
         if numRows == 1: return s
         res = []
 
