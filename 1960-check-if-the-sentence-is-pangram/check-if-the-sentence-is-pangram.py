@@ -14,6 +14,8 @@ class Solution:
         #         return True
 
         # return count == 26
+
+        #OPTIMAL CODE
         
         char = [False] * 26
         count = 0
