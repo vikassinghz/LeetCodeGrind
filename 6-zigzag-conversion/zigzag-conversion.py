@@ -1,7 +1,8 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
 
-        #Optimal
+        #Optimal Approach
+        
         if numRows == 1: return s
         res = []
 
