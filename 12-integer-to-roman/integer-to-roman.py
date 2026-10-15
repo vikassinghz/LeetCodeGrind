@@ -10,7 +10,7 @@ class Solution:
 
             if C > 0:
                 Roman.append(value *C)
-            num %= key
+                num %= key
 
         return "".join(Roman)
 
