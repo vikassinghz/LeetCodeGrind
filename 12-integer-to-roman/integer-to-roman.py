@@ -8,7 +8,7 @@ class Solution:
             
             C = num // key
 
-            if C != 0:
+            if C > 0:
                 Roman.append(value *C)
             num %= key
 
