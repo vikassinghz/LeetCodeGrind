@@ -1,5 +1,7 @@
 class Solution:
     #USING DP HashSet and HashMap
+    #OPTIMAL
+
     def isConcatenated(self, word, hs, hm):
         if word in hm:
             return hm[word]
