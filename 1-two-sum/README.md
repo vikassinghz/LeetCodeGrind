@@ -20,7 +20,7 @@
 <strong>Output:</strong> [1,2]
 </pre>
 
-<p><strong class="example">Example 3:</strong></p>
+<p><strong class="example">Eg 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [3,3], target = 6
