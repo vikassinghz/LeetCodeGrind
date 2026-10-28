@@ -2,7 +2,8 @@ class Solution:
     #Brute Approach
 
     def longestDupSubstring(self, s: str) -> str:
-    #     n = len(s)
+    # Brute Force but give time limit increase    
+          # n = len(s)
     #     res = ""
 
     #     for i in range(n):
