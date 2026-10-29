@@ -15,16 +15,18 @@ class Solution:
         if k == 0:
             return head
 
-        tail.next = head
+        slow = head
+        fast = head
 
-        steps = length - k
-        new_tail = head
+        for _ in range(k):
+            fast = fast.next
 
-        for _ in range(steps - 1):
-            new_tail = new_tail.next
+        while fast.next:
+            slow = slow.next
+            fast = fast.next
 
-        new_head = new_tail.next
-        new_tail.next = None
+        new_head = slow.next
+        slow.next = None
+        fast.next = head
 
         return new_head
-        
