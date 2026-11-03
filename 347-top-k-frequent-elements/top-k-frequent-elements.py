@@ -28,6 +28,6 @@ class Solution:
         for i in range(len(freq) - 1, 0, -1):
             for num in freq[i]:
                 res.append(num)
-            if len(res) == k:
-                return res
+                if len(res) == k:
+                    return res
         
