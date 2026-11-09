@@ -15,5 +15,5 @@ class Solution:
                     if j == 0 or grid[i][j - 1] == 0:
                         p += 1     #Left
                     if j == col - 1 or grid[i][j + 1] == 0:
-                        p += 1
+                        p += 1     #Right
         return p                               
